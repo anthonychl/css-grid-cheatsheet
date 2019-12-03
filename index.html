@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grids Cheatsheet 1</title>
+    <style>
+        .wrapper{
+            display: grid;
+
+            grid-template-columns: 70% 30%; /* we want the divs to display in a 70-30% proportion pattern, from one div to the next, no matter how many divs*/
+            /* grid-template-rows: 70% 30%; */
+
+            /* to separate columns or rows */
+            /* grid-column-gap: 1em;  "grid-column-gap property is obsolete" 
+                and so is grid-row-gap
+                use the properties below instead
+            */           
+            column-gap: 2   px; /* you can use different measuring units. ie: em, px, mm, cm ... */ 
+            row-gap: 1em;
+            
+            /* if column-gap and grid-gap have the same value
+                we can use instead
+                gap: ;
+                
+                dont use
+                grid-gap: ;
+                which its obsolete
+            */
+            
+        
+        }
+        .wrapper div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aperiam ratione, sint quis aut nobis dolorem minus veritatis officia quo corporis atque dolore, veniam autem cum sapiente, ipsa maiores deleniti. Recusandae sed, quia non nisi suscipit eius minima. Ullam at eos accusamus ipsum dolorum quod reiciendis a quidem nulla accusantium? Veniam porro rerum voluptas atque iure consequuntur eos, perferendis ad, debitis eaque suscipit vel id. Quibusdam harum consequatur commodi similique eligendi minima dolorum perspiciatis incidunt aspernatur repellendus! Voluptate, ipsam fugiat!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quidem facilis eveniet sunt, accusamus cupiditate impedit provident expedita velit laboriosam quam, architecto magnam. Tempora molestiae id eveniet? Ullam, quaerat necessitatibus?
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, provident eaque dolorem tempora voluptatem nisi eveniet dolore doloremque voluptate modi! Similique suscipit sequi sunt debitis quisquam delectus natus odit repellendus, aliquid excepturi repellat ipsa? Placeat architecto unde magni atque sunt.
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum maiores at vitae tenetur nesciunt, in architecto quam beatae dignissimos ipsa? Rem eius eaque ipsum similique at recusandae, soluta blanditiis adipisci architecto consequuntur molestias atque reprehenderit cumque neque itaque aliquam ratione?
+        </div>
+    </div>
+    
+</body>
+</html>
